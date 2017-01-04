@@ -1,0 +1,39 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: brown;
+}
+
+#iframe-wrapper {
+	width: 100%;
+}
+
+#arrow-circle-top:hover, #question-sign:hover {
+	cursor: pointer;
+}
+
+#arrow-circle-top {
+	position: fixed;
+	right: 1vw;
+	bottom: 1vh;
+	width: 48px;
+	height: 48px;
+}
+
+#question-sign {
+	position: absolute;
+	bottom: 1vh;
+	right: 1vw;
+	width: 48px;
+	height: 48px;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+iframe {
+	margin: 0 auto;
+}
