@@ -16,7 +16,7 @@
 		<img src="arrow-circle-top.png" id="arrow-circle-top" style="display: none; "/>
 		
 		<script>
-		
+
 			$(window).scroll(function() {
 				if(document.body.scrollTop < window.innerHeight * 0.01) {
 					$('#arrow-circle-top').hide();
@@ -26,11 +26,11 @@
 					$('#question-sign').hide();
 				}
 			});
-		
+
 			$('#question-sign').click(function() {
 				$("html, body").animate({ scrollTop: $('#text-content').offset().top }, 1000);
 			});
-		
+
 			$('#arrow-circle-top').click(function() {
 				$("html, body").animate({ scrollTop: 0 }, 1000);
 			});
@@ -39,6 +39,15 @@
 				var iframe = $('iframe');
 				var height = iframe.height();
 				var width = parseInt(height * ( 16 / 9 ));
+				
+				var maxWidth = window.innerWidth * 0.9;
+				
+				if(width > maxWidth) {
+					width = maxWidth;
+					height = parseInt(width / ( 16 / 9 ));
+				}
+				
+				iframe.height(height);
 				iframe.width(width);
 			}
 		

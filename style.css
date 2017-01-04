@@ -7,6 +7,8 @@ body, html {
 
 #iframe-wrapper {
 	width: 100%;
+	height: auto;
+	position: relative;
 }
 
 #arrow-circle-top:hover, #question-sign:hover {
